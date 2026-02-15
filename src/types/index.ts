@@ -28,4 +28,5 @@ export type Category = {
   name: string
   type: 'income' | 'expense'
   is_default: boolean
+  household_id?: string
 }

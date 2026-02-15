@@ -43,10 +43,14 @@ export default function TransactionFilters({
       <div className="grid grid-cols-2 gap-4">
         {/* Date Range */}
         <div>
-          <label className="block text-xs font-medium mb-1 text-gray-500">
+          <label
+            htmlFor="startDate"
+            className="block text-xs font-medium mb-1 text-gray-500"
+          >
             Start Date
           </label>
           <input
+            id="startDate"
             type="date"
             value={filters.startDate}
             onChange={(e) => updateFilters('startDate', e.target.value)}
@@ -54,10 +58,14 @@ export default function TransactionFilters({
           />
         </div>
         <div>
-          <label className="block text-xs font-medium mb-1 text-gray-500">
+          <label
+            htmlFor="endDate"
+            className="block text-xs font-medium mb-1 text-gray-500"
+          >
             End Date
           </label>
           <input
+            id="endDate"
             type="date"
             value={filters.endDate}
             onChange={(e) => updateFilters('endDate', e.target.value)}
@@ -67,10 +75,14 @@ export default function TransactionFilters({
 
         {/* Type Filter */}
         <div>
-          <label className="block text-xs font-medium mb-1 text-gray-500">
+          <label
+            htmlFor="type"
+            className="block text-xs font-medium mb-1 text-gray-500"
+          >
             Type
           </label>
           <select
+            id="type"
             value={filters.type}
             onChange={(e) => updateFilters('type', e.target.value)}
             className="w-full rounded-md border border-gray-300 dark:border-gray-700 p-2 text-sm bg-transparent"
@@ -84,10 +96,14 @@ export default function TransactionFilters({
 
         {/* Category Filter */}
         <div>
-          <label className="block text-xs font-medium mb-1 text-gray-500">
+          <label
+            htmlFor="category"
+            className="block text-xs font-medium mb-1 text-gray-500"
+          >
             Category
           </label>
           <select
+            id="category"
             value={filters.category}
             onChange={(e) => updateFilters('category', e.target.value)}
             className="w-full rounded-md border border-gray-300 dark:border-gray-700 p-2 text-sm bg-transparent"

@@ -66,6 +66,14 @@ This project is ready to be deployed on [Netlify](https://www.netlify.com/).
 2.  Set the `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` in Netlify's Environment Variables.
 3.  Deploy.
 
+## Testing
+
+Run the test suite to verify components and logic:
+
+```bash
+npm run test
+```
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

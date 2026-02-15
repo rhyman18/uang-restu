@@ -160,8 +160,11 @@ export default function TransactionForm({
 
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium mb-1">Date</label>
+              <label htmlFor="date" className="block text-sm font-medium mb-1">
+                Date
+              </label>
               <input
+                id="date"
                 type="date"
                 required
                 value={formData.date}
@@ -244,8 +247,11 @@ export default function TransactionForm({
           )}
 
           <div>
-            <label className="block text-sm font-medium mb-1">Amount</label>
+            <label htmlFor="amount" className="block text-sm font-medium mb-1">
+              Amount
+            </label>
             <input
+              id="amount"
               type="number"
               required
               placeholder="0"
@@ -260,8 +266,14 @@ export default function TransactionForm({
           {/* Category - Hide for Transfer */}
           {formData.type !== 'transfer' && (
             <div>
-              <label className="block text-sm font-medium mb-1">Category</label>
+              <label
+                htmlFor="category"
+                className="block text-sm font-medium mb-1"
+              >
+                Category
+              </label>
               <select
+                id="category"
                 required
                 value={formData.category}
                 onChange={(e) =>
@@ -309,10 +321,14 @@ export default function TransactionForm({
           )}
 
           <div>
-            <label className="block text-sm font-medium mb-1">
+            <label
+              htmlFor="description"
+              className="block text-sm font-medium mb-1"
+            >
               Description
             </label>
             <input
+              id="description"
               type="text"
               placeholder={
                 formData.type === 'transfer'
